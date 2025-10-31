@@ -7,7 +7,11 @@ export function createEnvManager<T extends z.ZodSchema>(schema: T) {
   const result = schema.safeParse(process.env);
   if (!result.success) {
     console.error("Invalid environment configuration:");
-    console.error(result.error.format());
+
+    const errorTree = z.treeifyError(result.error);
+
+    console.error(errorTree);
+
     throw new Error("Environment validation failed");
   }
 
