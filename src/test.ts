@@ -1,4 +1,4 @@
-import { createEnvManager } from "../dist/index.js";
+import { createEnvManager } from "./index.js";
 import { z } from "zod";
 
 const env = createEnvManager(
