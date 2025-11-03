@@ -1,5 +1,5 @@
 {
-  "name": "@tekdev/env-manager",
+  "name": "tek-env",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
