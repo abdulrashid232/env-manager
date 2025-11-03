@@ -17,7 +17,7 @@ A lightweight, type-safe **environment variable manager** for Node.js and JavaSc
 ## 📦 Installation
 
 ```bash
-npm install @env-manager
+npm install @tek-env
 ```
 
 ---
@@ -29,7 +29,7 @@ npm install @env-manager
 Create an `env.ts` file:
 
 ```typescript
-import { createEnvManager } from "@tekdev/env-manager";
+import { createEnvManager } from "@tek-env";
 import { z } from "zod";
 
 export const env = createEnvManager(
