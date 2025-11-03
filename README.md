@@ -1,4 +1,4 @@
-# @tekdev/env-manager
+# env-manager
 
 A lightweight, type-safe **environment variable manager** for Node.js and JavaScript projects. Provides **runtime validation** and **TypeScript type inference** powered by [Zod](https://github.com/colinhacks/zod).
 
@@ -17,7 +17,7 @@ A lightweight, type-safe **environment variable manager** for Node.js and JavaSc
 ## 📦 Installation
 
 ```bash
-npm install @tekdev/env-manager
+npm install @env-manager
 ```
 
 ---
@@ -120,34 +120,6 @@ DEBUG=true
 
 ---
 
-## 🛠️ Development
-
-### Build
-
-```bash
-npm run build
-```
-
-This compiles TypeScript files from `src/` to `dist/` with full type declarations.
-
-### Scripts
-
-- `npm run build` - Compile TypeScript to JavaScript
-- `npm start` - Run the compiled distribution
-
----
-
-## 📦 Publishing
-
-When ready to publish to npm:
-
-```bash
-npm publish --access public
-```
-
-The `prepublishOnly` script will automatically build your project before publishing.
-
----
 
 ## 🎯 Use Cases
 
