@@ -11,6 +11,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
+    "start": "node dist/index.js",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -21,10 +22,19 @@
     "angular",
     "react",
     "config",
-    "environment"
+    "environment",
+    "developer-tools"
   ],
-  "author": "Abdul-Rashid Issah",
+  "author": "Abdul-Rashid  <abdulrashidissah232@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdulrashid232/env-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abdulrashid232/env-manager/issues"
+  },
+  "homepage": "git+https://github.com/abdulrashid232/env-manager.git",
   "type": "module",
   "dependencies": {
     "dotenv": "^17.2.3",
