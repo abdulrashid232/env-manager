@@ -10,14 +10,14 @@ A lightweight, type-safe **environment variable manager** for Node.js and JavaSc
 ✅ **Runtime validation** - Validates environment variables against a Zod schema  
 ✅ **Automatic `.env` loading** - Automatically loads environment variables via `dotenv`  
 ✅ **Error reporting** - Detailed error messages for invalid configurations  
-✅ **Zero complications** - Simple, focused API  
+✅ **Zero complications** - Simple, focused API
 
 ---
 
 ## 📦 Installation
 
 ```bash
-npm install @tek-env
+npm install tek-env
 ```
 
 ---
@@ -65,6 +65,7 @@ console.log(config);
 Creates a type-safe environment manager instance.
 
 **Parameters:**
+
 - `schema` - A Zod schema object defining your environment variables
 
 **Returns:** An object with the following methods:
@@ -75,7 +76,7 @@ Retrieves a single environment variable with full type safety.
 
 ```typescript
 const apiUrl = env.get("API_URL"); // TypeScript knows this is a string
-const port = env.get("PORT");      // TypeScript knows this is a string
+const port = env.get("PORT"); // TypeScript knows this is a string
 ```
 
 #### `getAll(): T`
@@ -120,7 +121,6 @@ DEBUG=true
 
 ---
 
-
 ## 🎯 Use Cases
 
 - **Express.js** - Validate server config on startup
@@ -134,15 +134,17 @@ DEBUG=true
 ## 💡 Why use this?
 
 **Traditional approach:**
+
 ```typescript
-const apiUrl = process.env.API_URL;           // string | undefined
+const apiUrl = process.env.API_URL; // string | undefined
 const port = parseInt(process.env.PORT || ""); // Could be NaN
 ```
 
 **With env-manager:**
+
 ```typescript
-const apiUrl = env.get("API_URL");  // string (type-safe, validated)
-const port = env.get("PORT");       // string (validated format)
+const apiUrl = env.get("API_URL"); // string (type-safe, validated)
+const port = env.get("PORT"); // string (validated format)
 ```
 
 ---

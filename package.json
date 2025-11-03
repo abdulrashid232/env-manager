@@ -1,7 +1,7 @@
 {
   "name": "tek-env",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "A lightweight, type-safe environment variable manager for Node.js and JavaScript projects. Provides runtime validation and TypeScript type inference powered by Zod",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
