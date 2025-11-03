@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/abdulrashid232/env-manager/issues"
   },
-  "homepage": "git+https://github.com/abdulrashid232/env-manager.git",
+  "homepage": "git+https://github.com/abdulrashid232/env-manager/blob/main/README.md",
   "type": "module",
   "dependencies": {
     "dotenv": "^17.2.3",
